@@ -35,7 +35,6 @@ import { ScratcherContainerComponent } from '../scratcher/scratcher-container/sc
     ],
     exports:[RouterModule],
     declarations:[
-        MainContainerComponent,
         CloneContainerComponent,
         FiddlerContainerComponent,
         ScratcherContainerComponent

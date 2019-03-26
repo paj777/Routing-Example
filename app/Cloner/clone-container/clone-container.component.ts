@@ -31,11 +31,13 @@ export class CloneContainerComponent implements OnInit, AfterViewInit {
   }
 
   clickerMe(){
-    alert('clicker me');
+    //alert('clicker me');
+    console.log('naviagating to actions');
+    this.router.navigate([{outlets: {actionsbar:['actions']}}]);
   }
 
   ngAfterViewInit() {
-    this.router.navigate([{outlets: {actionsbar:['actions']}}]);
+    //this.router.navigate([{outlets: {actionsbar:['actions']}}]);
   }
   
 }
