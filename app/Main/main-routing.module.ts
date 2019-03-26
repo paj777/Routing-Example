@@ -10,6 +10,7 @@ import { ScratcherContainerComponent } from '../scratcher/scratcher-container/sc
         RouterModule.forChild([
             {
                 path:'main',
+                component: MainContainerComponent,
                 children:[{
                     path:'',
                     component: MainContainerComponent
