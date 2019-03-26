@@ -1,0 +1,25 @@
+<p>
+  main-container works!
+</p>
+
+<div class="card-body">
+    <div class="wizard">
+      <a [routerLink]="['cloner']"
+      routerLinkActive="active">
+        Cloner
+      </a>
+      <a [routerLink]="['fiddler']"
+      routerLinkActive="active">
+        Fiddler      
+      </a>
+      <a [routerLink]="['scratcher']"
+      routerLinkActive="active">
+        Scratcher
+      </a>
+    </div>
+  </div>
+
+
+<div class="container">
+    <router-outlet></router-outlet>
+  </div>
