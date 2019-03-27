@@ -15,4 +15,10 @@ export class AppComponent {
     alert('asdf');
 
   }
+
+  clickerMe(){
+    //alert('clicker me');
+    //console.log('naviagating to actions');
+    //this.router.navigate([{outlets: {actionsbar:['actions']}}]);
+  }
 }

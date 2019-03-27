@@ -1,13 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainContainerComponent } from './main-container/main-container.component';
 import { MainRoutingModule } from './main-routing.module';
+//import { ActionsModule } from '../Cloner/actions/actions.module';
+import { RouterModule } from '@angular/router';
+import { MainContainerComponent } from './main-container/main-container.component';
+import { FiddlerContainerComponent } from '../fiddler/fiddler-container/fiddler-container.component';
+import { ScratcherContainerComponent } from '../scratcher/scratcher-container/scratcher-container.component';
+import { CloneContainerComponent } from './Cloner/clone-container/clone-container.component';
 
 @NgModule({
-  declarations: [MainContainerComponent],
+  declarations: [MainContainerComponent,
+    CloneContainerComponent,
+    FiddlerContainerComponent,
+    ScratcherContainerComponent],
   imports: [
     CommonModule,
-    MainRoutingModule
-  ]
+    MainRoutingModule,
+    RouterModule
+  ]  
 })
 export class MainModule { }

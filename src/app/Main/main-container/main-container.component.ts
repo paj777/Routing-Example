@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-main-container',
@@ -8,9 +8,13 @@ import { RouterModule } from '@angular/router';
 })
 export class MainContainerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
   }
 
+  clickerMe(){
+    console.log('naviagating to actions');
+    this.router.navigate([{outlets: {actionsbar:'actions'}}], { relativeTo: this.activatedRoute.parent});
+  }
 }
